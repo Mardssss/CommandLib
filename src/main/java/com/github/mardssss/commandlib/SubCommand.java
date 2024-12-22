@@ -30,7 +30,6 @@ public interface SubCommand {
     List<String> onTabComplete(CommandSender sender, Command cmd, String alias, String[] args);
 
     /**
-     * Returns a brief description of the sub-command.
      *
      * @return a short description of the sub-command
      */

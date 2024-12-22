@@ -79,17 +79,17 @@ public abstract class BaseCommand implements CommandExecutor, TabCompleter {
     }
 
     /**
-     * Returns the current usage message for the command.
+     * Returns the current {@link #usageMessage Usage Message} for the command.
      * Developers can customize this message as needed.
      *
-     * @return The usage message for the command.
+     * @return The {@link #usageMessage Usage Message} for the command.
      */
     protected String getUsageMessage() {
         return usageMessage;
     }
 
     /**
-     * Allows developers to set a custom usage message.
+     * Allows developers to set a custom {@link #usageMessage Usage Message}.
      *
      * @param usageMessage The custom usage message to set.
      */
@@ -101,7 +101,7 @@ public abstract class BaseCommand implements CommandExecutor, TabCompleter {
      * Sets the default usage message for the command.
      * This method can be overridden by subclasses to provide a custom default message.
      *
-     * @return The default usage message for the command.
+     * @return The default {@link #usageMessage Usage Message} for the command.
      */
     protected String setDefaultUsageMessage() {
         StringBuilder defaultUsageMessage = new StringBuilder("Available Commands:\n");
@@ -115,7 +115,7 @@ public abstract class BaseCommand implements CommandExecutor, TabCompleter {
     /**
      * Returns the name of the command.
      *
-     * @return The command name.
+     * @return The {@link #commandName Command Name}
      */
     public String getCommandName() {
         return this.commandName;

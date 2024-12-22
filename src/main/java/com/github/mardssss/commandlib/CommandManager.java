@@ -5,7 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 /**
  * CommandManager is responsible for managing command registration
  * for a Bukkit/Spigot plugin. It allows the registration of commands
- * and their associated executors and tab completers.
+ * and their associated executors and tab completetions.
  */
 public class CommandManager {
     private final JavaPlugin plugin;
