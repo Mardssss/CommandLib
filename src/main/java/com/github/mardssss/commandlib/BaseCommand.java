@@ -21,7 +21,8 @@ public abstract class BaseCommand implements CommandExecutor, TabCompleter {
     private String usageMessage; // Field to hold the usage message
 
     /**
-     * Constructs a new BaseCommand instance with the specified command name.
+     * Constructs a new BaseCommand instance with the specified command name,
+     * and a default usage message
      *
      * @param commandName The name of the command.
      */
@@ -32,6 +33,7 @@ public abstract class BaseCommand implements CommandExecutor, TabCompleter {
 
     /**
      * Registers a subcommand with the specified name.
+     * <p>Make sure you register {@link CommandLib#registerCommand(BaseCommand)} begore trying to register the coomand</>
      *
      * @param name      The name of the subcommand.
      * @param subCommand The SubCommand instance to register.

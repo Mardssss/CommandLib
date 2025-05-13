@@ -24,14 +24,20 @@ public interface SubCommand {
      * @param cmd the command that is being completed
      * @param alias the alias of the command that is being completed
      * @param args the arguments that have been entered so far, with the last argument being the one that needs to be completed
-     *              Note: starts from args length == 2, first completion
+     *
      * @return a list of possible tab completions for the last argument
      */
     List<String> onTabComplete(CommandSender sender, Command cmd, String alias, String[] args);
 
     /**
-     *
+     * The description of the {@link SubCommand SubCommand}
      * @return a short description of the sub-command
      */
     String getDescription();
+
+    /**
+     * The permission of the {@link SubCommand SubCommand}
+     * @return
+     */
+    String getPermission();
 }
